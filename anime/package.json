@@ -9,7 +9,7 @@
     "better-react-carousel": "^1.1.2",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
-    "env-cmd": "^11.0.0",
+    "env-cmd": "^10.1.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^18.3.1",
