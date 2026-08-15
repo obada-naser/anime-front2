@@ -18,11 +18,11 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-     "start": "env-cmd -f .env.development react-scripts start",
-  "start:render": "env-cmd -f .env.render react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
+    "start": "env-cmd -f .env.development react-scripts start",
+    "start:render": "env-cmd -f .env.render react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
