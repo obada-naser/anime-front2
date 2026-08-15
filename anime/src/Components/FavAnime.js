@@ -26,7 +26,10 @@ class FavAnime extends React.Component {
 
     gettingAnime = () => {
         const { user } = this.props.auth0;
-        let url = `http://localhost:3001/favGet?email=${user.email}`;
+        
+        let url = `${process.env.REACT_APP_SERVER_URL}/favGet?email=${user.email}`;
+
+        //  let url = `http://localhost:3001/favGet?email=${user.email}`;
 
         axios.get(url).then(item => {
             this.setState({
@@ -51,7 +54,9 @@ class FavAnime extends React.Component {
         const { user } = this.props.auth0;
 
 
-        let url = `http://localhost:3001/favDelete/${index}?email=${user.email}`;
+        let url = `${process.env.REACT_APP_SERVER_URL}/favDelete/${index}?email=${user.email}`;
+
+        // let url = `http://localhost:3001/favDelete/${index}?email=${user.email}`;
 
         axios.delete(url).then(item => {
             this.setState({
@@ -133,7 +138,9 @@ class FavAnime extends React.Component {
             aired: event.target.aired.value
         }
 
-        let url = `http://localhost:3001/favUpdate/${this.state.indexUpdate}`
+        let url = `${process.env.REACT_APP_SERVER_URL}/favUpdate/${this.state.indexUpdate}`
+
+        // let url = `http://localhost:3001/favUpdate/${this.state.indexUpdate}`
 
         axios.put(url, data).then(item => {
             this.setState({

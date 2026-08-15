@@ -50,7 +50,9 @@ class Anime extends React.Component {
 
   searchAnime = (searchQuery, page) => {
 
-    const url = `http://localhost:3001/search?searchQuery=${searchQuery}&page=${page}`;
+    const url = `${process.env.REACT_APP_SERVER_URL}/search?searchQuery=${searchQuery}&page=${page}`;
+    // const url = `http://localhost:3001/search?searchQuery=${searchQuery}&page=${page}`;
+
 
     axios.get(url).then(item => {
 
@@ -159,7 +161,9 @@ class Anime extends React.Component {
       aired:this.state.animeArr[index].aired
     }
 
-    let url = `http://localhost:3001/favAnime`
+    // let url = `http://localhost:3001/favAnime`
+
+    let url = `${process.env.REACT_APP_SERVER_URL}/favAnime`
     axios.post(url, favData).then(item => {
       this.setState({
         animeFav: item.data

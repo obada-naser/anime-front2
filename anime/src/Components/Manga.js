@@ -50,7 +50,9 @@ class Manga extends React.Component {
 
   searchManga = (searchQuery, page) => {
 
-    const url = `http://localhost:3001/searchManga?searchQuery=${searchQuery}&page=${page}`;
+    const url = `${process.env.REACT_APP_SERVER_URL}/searchManga?searchQuery=${searchQuery}&page=${page}`;
+
+    // const url = `http://localhost:3001/searchManga?searchQuery=${searchQuery}&page=${page}`;
 
     axios.get(url).then(item => {
 

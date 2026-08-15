@@ -26,7 +26,10 @@ class MangaFav extends React.Component {
 
     gettingManga = () => {
         const { user } = this.props.auth0;
-        let url = `http://localhost:3001/mangaGet?email=${user.email}`;
+
+        let url = `${process.env.REACT_APP_SERVER_URL}/mangaGet?email=${user.email}`;
+        
+        // let url = `http://localhost:3001/mangaGet?email=${user.email}`;
 
         axios.get(url).then(item => {
             this.setState({
@@ -51,7 +54,9 @@ class MangaFav extends React.Component {
         const { user } = this.props.auth0;
 
 
-        let url = `http://localhost:3001/mangaDelete/${index}?email=${user.email}`;
+        let url = `${process.env.REACT_APP_SERVER_URL}/mangaDelete/${index}?email=${user.email}`;
+
+        // let url = `http://localhost:3001/mangaDelete/${index}?email=${user.email}`;
 
         axios.delete(url).then(item => {
             this.setState({
@@ -136,7 +141,9 @@ class MangaFav extends React.Component {
             published: event.target.published.value
         }
 
-        let url = `http://localhost:3001/updateManga/${this.state.indexUpdate}`
+        let url = `${process.env.REACT_APP_SERVER_URL}/updateManga/${this.state.indexUpdate}`
+
+        // let url = `http://localhost:3001/updateManga/${this.state.indexUpdate}`
 
         axios.put(url, data).then(item => {
             this.setState({
