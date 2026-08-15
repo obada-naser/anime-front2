@@ -214,13 +214,16 @@ class Home extends React.Component {
     const topAiringAnimeSlides = this.chunkArray(this.state.topAiring, this.state.cardsPerSlide) //shows the number of cards depends on the size of the screen
     return (
       <>
+      {console.log("Origin:", window.location.origin)}
         {
           <center>
 
             <Carousel activeIndex={index} onSelect={this.handleSelect} loop className="hotAnime">
               {this.state.hotAnime.map((image) => {
                 return (
+                
                   <Carousel.Item>
+                    
                     <a href={image.url}>
 
 
