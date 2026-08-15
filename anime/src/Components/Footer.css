@@ -1,0 +1,41 @@
+.Footer{
+
+   
+    background-color: #664E88; 
+    position: fixed;
+     padding: 10px 12px 7px 42%;
+    bottom: 0;
+    width: 100%;
+            /* Height of the footer*/ 
+    height: 3.2em;
+    
+}
+
+@media (max-width: 992px) {
+    .Footer {
+       padding: 10px 10px 0px 35%;
+    }
+}
+
+@media (max-width: 576px) {
+    .Footer {
+       padding: 10px 10px 0px 24%;
+    }
+}
+
+.footerTop{
+    margin-top: 7%;
+
+}
+
+@media (max-width: 992px) {
+    .footerTop {
+       margin-top: 7%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footerTop {
+       margin-top: 15%;
+    }
+}

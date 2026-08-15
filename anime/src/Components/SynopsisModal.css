@@ -1,0 +1,18 @@
+.modalBody{
+    background-color: blanchedalmond;
+} 
+
+.headerFooter{
+    background-color: rgb(235, 237, 235);
+}
+.image{
+
+    display:inline;
+    position:absolute;
+    width: 20%;
+}
+.synopsis{
+     display:inline;
+    position:relative;
+    width: 80%;
+}

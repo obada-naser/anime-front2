@@ -1,0 +1,61 @@
+.nav{
+    
+    color: #ffffff;
+    /* font-family: 'Orbitron', sans-serif; */
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.navBrand{
+   
+    background-color: #664E88;
+     position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  z-index: 1000;
+ min-height: 170px;
+    
+}
+
+.me-auto{
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.Home{
+    color: #AE00FB;
+    font-weight: bolder;
+}
+.Link1{
+    color: #B5FFD9;
+    font-weight: bolder;
+}
+
+.Link2{
+    color: #B5FFD9;
+    font-weight: bolder;
+}
+.Link3{
+    color: #B5FFD9;
+    font-weight: bolder;
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+@media (max-width: 576px) {
+    .header-logo {
+        width: 170px;
+    }
+}
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}

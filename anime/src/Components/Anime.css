@@ -1,0 +1,153 @@
+body{
+
+    background-image:url("https://wallpapercave.com/wp/wp2771916.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+
+.animeImg{
+    width: 100%;
+}
+.form-container{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+     
+}
+
+.animeSubmit{
+
+    width: 100%;
+    max-width: 700px;
+
+    
+}
+
+
+
+
+.cardAnime{
+     width: 18rem;
+    margin-left:15%;
+    margin-bottom: 3em;
+    background-color:transparent !important;
+
+}
+
+/* .cardBody{
+    background-color:rgb(172, 142, 178);
+} */
+
+.animeLabel{
+    
+    font-size:3vh;
+    font-weight:600;
+   font-family: 'Orbitron', sans-serif;
+    background-color: #B5FFD9;
+    
+   
+}
+
+
+.Intro{
+     font-size:4vh;
+      font-weight:500;
+      max-width: 700px;
+    background-color: #B5FFD9;
+margin-top: 5rem;
+}
+
+*{
+  
+   font-family: 'Orbitron', sans-serif;
+   
+
+}
+.animeTitle{
+    color:#d2e6e1;
+}
+
+.searchBar{
+    width: 100%;
+}
+
+@media (max-width: 577px) {
+    .searchBar {
+        width:100%;
+    
+   
+
+    }
+    
+    .animeSubmit{
+        margin-left: 10%;
+        margin-right:10%;
+        width: fit-content;
+         display: inline-block;
+         
+    }
+      .animeForm {
+       text-align: center;
+       width: 100%;
+    }
+    .form-check{
+        margin-left: 10%;
+    }
+    .Intro{
+     font-size:4vh;
+      font-weight:500;
+      margin-top: 8rem;
+    background-color: #B5FFD9;
+
+}
+.cardAnime{
+     width: 18rem;
+    margin-left:15%;
+    margin-right: 15%;
+    margin-bottom: 3em;
+    background-color:transparent !important;
+
+}
+}
+
+@media (max-width: 992px) {
+    
+      .searchBar {
+        width:100%;
+    
+   
+    }
+   
+      .animeForm {
+       text-align: center;
+       width: 100%;
+    }
+    .form-check{
+        margin-left: 10%;
+    }
+    .Intro{
+     font-size:4vh;
+      font-weight:500;
+      margin-top: 8rem;
+    background-color: #B5FFD9;
+
+}   
+    
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
