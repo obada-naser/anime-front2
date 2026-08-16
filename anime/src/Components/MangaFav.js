@@ -216,7 +216,7 @@ class MangaFav extends React.Component {
                                     <Card.Body className="cardBody d-flex flex-column">
                                         <Card.Title className="favTitle">{manga.title ?? 'N/A'}</Card.Title>
 
-                                        <Card.Text>Anime Type: {manga.type ?? 'N/A'}</Card.Text>
+                                        <Card.Text>Manga Type: {manga.type ?? 'N/A'}</Card.Text>
                                         <Card.Text>Chapters: {manga.chapters ?? 'N/A'}</Card.Text>
                                         <Card.Text>Score: {manga.score ?? 'N/A'}</Card.Text>
                                         <Card.Text>Status: {manga.status ?? 'N/A'}</Card.Text>
