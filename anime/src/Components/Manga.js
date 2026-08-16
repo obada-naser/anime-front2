@@ -162,7 +162,9 @@ class Manga extends React.Component {
       published:this.state.mangaArr[index].published
     }
 
-    let url = `http://localhost:3001/favManga`
+
+
+    let url = `${process.env.REACT_APP_SERVER_URL}/favManga`
     axios.post(url, favData).then(item => {
       this.setState({
         mangaFav: item.data

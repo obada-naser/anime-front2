@@ -217,9 +217,9 @@ class MangaFav extends React.Component {
                                         <Card.Title className="favTitle">{manga.title ?? 'N/A'}</Card.Title>
 
                                         <Card.Text>Anime Type: {manga.type ?? 'N/A'}</Card.Text>
-                                        <Card.Text>Episodes: {manga.episodes ?? 'N/A'}</Card.Text>
+                                        <Card.Text>Episodes: {manga.chapters ?? 'N/A'}</Card.Text>
                                         <Card.Text>Score: {manga.score ?? 'N/A'}</Card.Text>
-                                        <Card.Text>Rated: {manga.rated ?? 'N/A'}</Card.Text>
+                                        <Card.Text>Rated: {manga.status ?? 'N/A'}</Card.Text>
                                         <div className="mt-auto d-flex flex-column gap-2">
                                         <Button variant="info" onClick={() => this.showSynopsis(idx)}>
                                                                           Show More..
